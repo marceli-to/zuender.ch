@@ -1,0 +1,59 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-CrPRFOVZ.css",
+    "name": "app",
+    "names": [
+      "app.css"
+    ],
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "assets": [
+      "assets/ChromaST-Regular-D1xfMCLw.woff2",
+      "assets/ChromaST-Regular-DWXlrxRc.woff",
+      "assets/ChromaST-Bold-Df4M0AAI.woff2",
+      "assets/ChromaST-Bold-Cd1dT3Vb.woff",
+      "assets/LSTrilleFilled-filledCondensed-CLeZCqb5.woff2",
+      "assets/LSTrilleFilled-filledCondensed-CFNSC-VX.woff",
+      "assets/LSTrilleFilled-ExtrafilledCondensed-B99aHQZ2.woff2",
+      "assets/LSTrilleFilled-ExtrafilledCondensed-DqW1wpB6.woff"
+    ]
+  },
+  "resources/fonts/ChromaST-Bold.woff": {
+    "file": "assets/ChromaST-Bold-Cd1dT3Vb.woff",
+    "src": "resources/fonts/ChromaST-Bold.woff"
+  },
+  "resources/fonts/ChromaST-Bold.woff2": {
+    "file": "assets/ChromaST-Bold-Df4M0AAI.woff2",
+    "src": "resources/fonts/ChromaST-Bold.woff2"
+  },
+  "resources/fonts/ChromaST-Regular.woff": {
+    "file": "assets/ChromaST-Regular-DWXlrxRc.woff",
+    "src": "resources/fonts/ChromaST-Regular.woff"
+  },
+  "resources/fonts/ChromaST-Regular.woff2": {
+    "file": "assets/ChromaST-Regular-D1xfMCLw.woff2",
+    "src": "resources/fonts/ChromaST-Regular.woff2"
+  },
+  "resources/fonts/LSTrilleFilled-ExtrafilledCondensed.woff": {
+    "file": "assets/LSTrilleFilled-ExtrafilledCondensed-DqW1wpB6.woff",
+    "src": "resources/fonts/LSTrilleFilled-ExtrafilledCondensed.woff"
+  },
+  "resources/fonts/LSTrilleFilled-ExtrafilledCondensed.woff2": {
+    "file": "assets/LSTrilleFilled-ExtrafilledCondensed-B99aHQZ2.woff2",
+    "src": "resources/fonts/LSTrilleFilled-ExtrafilledCondensed.woff2"
+  },
+  "resources/fonts/LSTrilleFilled-filledCondensed.woff": {
+    "file": "assets/LSTrilleFilled-filledCondensed-CFNSC-VX.woff",
+    "src": "resources/fonts/LSTrilleFilled-filledCondensed.woff"
+  },
+  "resources/fonts/LSTrilleFilled-filledCondensed.woff2": {
+    "file": "assets/LSTrilleFilled-filledCondensed-CLeZCqb5.woff2",
+    "src": "resources/fonts/LSTrilleFilled-filledCondensed.woff2"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-uYgI6j6a.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Chroma ST';
+  src: url('../../fonts/ChromaST-Regular.woff2') format('woff2'), url('../../fonts/ChromaST-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chroma ST';
+  src: url('../../fonts/ChromaST-Bold.woff2') format('woff2'), url('../../fonts/ChromaST-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Trille filled Condensed';
+  src: url('../../fonts/LSTrilleFilled-filledCondensed.woff2') format('woff2'), url('../../fonts/LSTrilleFilled-filledCondensed.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Trille Extra filled Condensed';
+  src: url('../../fonts/LSTrilleFilled-ExtrafilledCondensed.woff2') format('woff2'), url('../../fonts/LSTrilleFilled-ExtrafilledCondensed.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

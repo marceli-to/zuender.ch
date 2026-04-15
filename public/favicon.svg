@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>RealFaviconGenerator</dc:creator><dc:source>https://realfavicongenerator.net</dc:source></rdf:Description></rdf:RDF></metadata><style>
+    #light-icon {
+      display: inline;
+    }
+    #dark-icon {
+      display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #light-icon {
+        display: none;
+      }
+      #dark-icon {
+        display: inline;
+      }
+    }
+  </style><g id="light-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g><g transform="matrix(1.953125,0,0,1.953125,0,0)"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none"><path d="M36.4201 106.06H40.6808V197.905H109.393L41.1009 405.082H36L103.452 202.17H36.4201V106.06ZM471.319 106.06H476L413.229 308.972H476V405.082H471.739V313.237H407.288L471.319 106V106.06Z" fill="#FF0000"></path><path d="M360.958 106.052L298.186 308.963H360.958V405.073H145.399L212.851 202.161H145.819V106.052H360.958Z" fill="#FF0000"></path></svg></g></g></svg></g><g id="dark-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g><g transform="matrix(1.953125,0,0,1.953125,0,0)"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none"><path d="M36.4201 106.06H40.6808V197.905H109.393L41.1009 405.082H36L103.452 202.17H36.4201V106.06ZM471.319 106.06H476L413.229 308.972H476V405.082H471.739V313.237H407.288L471.319 106V106.06Z" fill="white"></path><path d="M360.958 106.052L298.186 308.963H360.958V405.073H145.399L212.851 202.161H145.819V106.052H360.958Z" fill="white"></path></svg></g></g></svg></g></svg>

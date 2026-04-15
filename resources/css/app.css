@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import "./partials/fonts.css";
+@import "./partials/spacing.css";
+@source "../views";
+@source "../../content";
+@source '../**/*.js';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-chroma: 'Chroma ST', sans-serif;
+  --font-trille: 'Trille filled Condensed', sans-serif;
+  --font-trille-extra: 'Trille Extra filled Condensed', sans-serif;
+  --color-crimson: #FF0000;
+  --container-page: 94.5rem;
+}
+
+[x-cloak] {
+  display: none !important;
+}
