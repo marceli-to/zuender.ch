@@ -4,9 +4,15 @@
 
 {{ partial:components/layout/body }}
 
-  {{ partial:components/layout/header }}
+  {{ partial:components/layout/header/overlay }}
 
   {{ partial:components/layout/main }}
+
+    {{ partial:components/layout/header/container }}
+
+    {{ template_content }}
+
+  {{ /partial:components/layout/main }}
 
   {{ partial:components/layout/footer }}
 
