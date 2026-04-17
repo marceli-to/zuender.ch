@@ -5,22 +5,72 @@
       {{ partial:components/logos/zuender }}
       {{ partial:components/logos/byline }}
     </div>
-    <div class="lg:mt-40 lg:grid lg:grid-cols-12 text-[1rem] leading-[1.28]">
-      <div class="lg:col-span-4">
+    <div class="lg:mt-52 flex lg:flex-row justify-between text-[1rem] leading-[1.28]">
+      <div class="lg:col-span-3">
         <address class="not-italic">
           <strong>Zünder<br>Ort für kreative Explosionen</strong><br>
           Nüschelerstrasse 45<br>8021 Zürich
         </address>
       </div>
-      <div class="lg:col-span-4">
-        Unterstützt durch:<br>
-
+      <div class="lg:col-span-3 flex flex-col gap-y-4 lg:gap-y-8">
+        <div>Unterstützt durch:</div>
+        <div>
+          <a 
+            href="https://www.diemobiliar.ch/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="Zur Website von Die Mobiliar"
+            class="text-crimson dark:text-white hover:opacity-60 transition-opacity">
+            {{ partial:components/logos/die-mobiliar }} 
+          </a>
+        </div>
       </div>
-      <div class="lg:col-span-4">
-
+      <div class="lg:col-span-3">
+        <nav>
+          <ul class="flex flex-col gap-y-2">
+            <li>
+              <a 
+                href="/showcase" 
+                class="text-crimson dark:text-white hover:text-crimson/60 dark:hover:text-white/60 transition-colors">
+                Showcase
+              </a>
+            </li>
+            <li>
+              <a 
+                href="/agenda" 
+                class="text-crimson dark:text-white hover:text-crimson/60 dark:hover:text-white/60 transition-colors">
+                Agenda
+              </a>
+            </li>
+            <li>
+              <a 
+                href="/archiv" 
+                class="text-crimson dark:text-white hover:text-crimson/60 dark:hover:text-white/60 transition-colors">
+                Archiv
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div class="lg:col-span-4">
-
+      <div class="lg:col-span-3">
+        <nav>
+          <ul class="flex flex-col gap-y-2">
+            <li>
+              <a 
+                href="/kontakt" 
+                class="text-crimson dark:text-white hover:text-crimson/60 dark:hover:text-white/60 transition-colors">
+                Kontakt
+              </a>
+            </li>
+            <li>
+              <a 
+                href="/impressum" 
+                class="text-crimson dark:text-white hover:text-crimson/60 dark:hover:text-white/60 transition-colors">
+                Impressum
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </footer>

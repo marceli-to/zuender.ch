@@ -14,6 +14,16 @@
   --container-page: 94.5rem;
 }
 
+@layer base {
+  :root {
+    --header-height: 6.25rem;     /* 100px */
+    --header-height-lg: 13.75rem; /* 220px */
+
+    --viewport-height: calc(100vh - var(--header-height) - 1.25rem);
+    --viewport-height-lg: calc(100vh - var(--header-height-lg) - 2.5rem);
+  }
+}
+
 [x-cloak] {
   display: none !important;
 }
@@ -34,9 +44,9 @@ strong, b {
 
 @keyframes header-subtitle-slide {
   from {
-    transform: translateY(32px);
+     opacity: 1;
   }
   to {
-    transform: translateY(12px);
+    opacity: 0;
   }
 }

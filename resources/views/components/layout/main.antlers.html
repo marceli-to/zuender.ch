@@ -1,9 +1,18 @@
 <main class="flex-1 border-x border-x-crimson dark:border-x-white w-full max-w-page mx-auto">
   {{ slot }}
 
-  <section class="min-h-[60vh] flex flex-col justify-end p-40 border-b border-b-crimson dark:border-b-white">
-    <div class="text-center text-3xl" >
-      Du hast die zündende Idee?<br>Wir versichern dich im Brandfall.
+  <section class="min-h-[var(--viewport-height)] lg:min-h-[var(--viewport-height-lg)] flex flex-col justify-end p-40 border-b border-b-crimson dark:border-b-white">
+
+    <div class="text-center text-3xl">
+
+      <div class="relative mx-auto w-fit px-20 text-crimson dark:text-white">
+        {{ partial:components/icons/bracket class="absolute left-0 top-0 h-full w-auto text-crimson dark:text-white" }}
+          <div class="text-center px-32">
+            Du hast die zündende Idee?<br>Wir versichern dich im Brandfall.
+          </div>
+        {{ partial:components/icons/bracket class="absolute right-0 top-0 h-full w-auto text-crimson dark:text-white rotate-180" }}
+      </div>
+
     </div>
   </section>
 
