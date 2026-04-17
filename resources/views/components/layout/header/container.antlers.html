@@ -4,14 +4,17 @@
 
     <div class="mx-auto max-w-7xl">
 
-      <div class="mx-auto header-logo">
-        {{ partial:components/icons/logo }}
+      <div 
+        class="mx-auto w-full animate-[header-logo-shrink_linear_both] [animation-timeline:scroll()] [animation-range:0_480px]" 
+        data-header-logo>
+        {{ partial:components/logos/logo }}
+      </div>
+      <div 
+        class="dark:opacity-50 opacity-70 animate-[header-subtitle-slide_linear_both] [animation-timeline:scroll()] [animation-range:0_240px]"
+        data-header-subtitle>
+        {{ partial:components/logos/byline }}
       </div>
 
-      <span
-        class="lg:text-[1.375rem] uppercase tracking-[100%] text-center block w-full dark:opacity-50 opacity-70 relative header-subtitle">
-        Ort für kreative Explosionen
-      </span>
 
     </div>
 

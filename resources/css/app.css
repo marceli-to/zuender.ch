@@ -30,23 +30,9 @@
 
 @keyframes header-subtitle-slide {
   from {
-    translate: 0 32px;
+    transform: translateY(32px);
   }
   to {
-    translate: 0 12px;
+    transform: translateY(12px);
   }
-}
-
-.header-logo {
-  width: 100%;
-  animation: header-logo-shrink linear both;
-  animation-timeline: scroll();
-  animation-range: 0 480px;
-}
-
-.header-subtitle {
-  translate: 0 32px;
-  animation: header-subtitle-slide linear both;
-  animation-timeline: scroll();
-  animation-range: 0 240px;
 }
