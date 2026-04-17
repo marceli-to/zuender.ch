@@ -18,6 +18,10 @@
   display: none !important;
 }
 
+strong, b {
+  @apply font-bold;
+}
+
 /* Scroll-driven header animations */
 @keyframes header-logo-shrink {
   from {
