@@ -2,7 +2,7 @@
 
   <div class="relative z-10 mx-auto max-w-page">
 
-    <div class="mx-auto max-w-7xl">
+    <div class="mx-auto max-w-6xl">
 
       <div 
         class="mx-auto w-full animate-[header-logo-shrink_linear_both] [animation-timeline:scroll()] [animation-range:0_480px]" 
@@ -10,7 +10,7 @@
         {{ partial:components/logos/zuender }}
       </div>
       <div 
-        class="dark:opacity-50 opacity-70 mt-32 animate-[header-subtitle-slide_linear_both] [animation-timeline:scroll()] [animation-range:0_360px]"
+        class="dark:opacity-50 opacity-70 mt-32 animate-[header-subtitle-slide_linear_both] [animation-timeline:scroll()] [animation-range:0_320px]"
         data-header-subtitle>
         {{ partial:components/logos/byline }}
       </div>
@@ -18,8 +18,8 @@
 
     </div>
 
-    {{ partial:components/buttons/theme-toggle class="absolute top-0 right-20 z-60" }}
 
   </div>
+    {{ partial:components/buttons/theme-toggle class="absolute top-40 right-10 z-60" }}
 
 </header>
