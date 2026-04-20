@@ -1,18 +1,26 @@
-<header class="sticky top-0 w-full z-50 pt-20 lg:pt-40 px-20 min-h-(--header-height) lg:min-h-(--header-height-lg)">
+<header class="sticky top-0 w-full z-50 py-20 md:pt-40 px-20 min-h-[var(--header-height)] md:min-h-(--header-height-md)">
 
-  <div class="relative z-10 mx-auto max-w-page">
+  <div class="relative z-10 mx-auto max-w-page ">
 
     <div class="mx-auto max-w-6xl">
 
-      <div 
-        class="mx-auto w-full animate-[header-logo-shrink_linear_both] [animation-timeline:scroll()] [animation-range:0_480px]" 
-        data-header-logo>
-        {{ partial:components/logos/zuender }}
+      <div class="mx-auto w-full">
+
+        <div
+          class="hidden md:block w-full mx-auto animate-[header-logo-shrink_linear_both] [animation-timeline:scroll()] [animation-range:0_480px] md:px-28"
+          data-header-logo>
+          {{ partial:components/logos/zuender }}
+        </div>
+
+        <div class="md:hidden">
+          {{ partial:components/logos/zuender size="small" class="w-76 h-auto" }}
+        </div>
+
       </div>
       <div 
-        class="dark:opacity-50 opacity-70 mt-32 animate-[header-subtitle-slide_linear_both] [animation-timeline:scroll()] [animation-range:0_320px]"
+        class="hidden md:block dark:opacity-50 opacity-70 mt-32 animate-[header-subtitle-slide_linear_both] [animation-timeline:scroll()] [animation-range:0_320px]"
         data-header-subtitle>
-        {{ partial:components/logos/byline }}
+        {{ partial:components/logos/byline class="block" }}
       </div>
 
 
@@ -20,6 +28,7 @@
 
 
   </div>
-    {{ partial:components/buttons/theme-toggle class="absolute top-40 right-10 z-60" }}
+  
+  {{ partial:components/buttons/theme-toggle class="w-24 h-24 lg:w-34 lg:h-34 absolute top-1/2 -translate-y-1/2 md:-translate-y-0 right-0 md:top-40 md:right-10 lg:right-0 z-60" }}
 
 </header>

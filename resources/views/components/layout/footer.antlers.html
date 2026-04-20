@@ -1,18 +1,20 @@
 <div class="w-full max-w-page mx-auto">
-  <div class="border-t border-t-crimson dark:border-t-white border-x border-x-crimson dark:border-x-white min-h-40 mb-80 lg:mb-120"></div>
-  <footer class="w-full pb-40 lg:pb-80">
-    <div class="flex flex-col gap-y-24">
+  <div class="hidden md:block border-t border-t-crimson dark:border-t-white border-x border-x-crimson dark:border-x-white min-h-40 md:mb-120">
+
+  </div>
+  <footer class="w-full pb-52 md:pb-80 mt-120 md:mt-0">
+    <div class="flex flex-col gap-y-24 mb-52">
       {{ partial:components/logos/zuender }}
-      {{ partial:components/logos/byline }}
+      {{ partial:components/logos/byline class="hidden md:block" }}
     </div>
-    <div class="lg:mt-52 flex lg:flex-row justify-between text-[1rem] leading-[1.28]">
-      <div class="lg:col-span-3">
+    <div class="flex flex-col md:flex-row justify-between text-[1rem] leading-[1.28]">
+      <div class="mb-52 md:mb-0 order-1 md:col-span-3">
         <address class="not-italic">
           <strong>Zünder<br>Ort für kreative Explosionen</strong><br>
           Nüschelerstrasse 45<br>8021 Zürich
         </address>
       </div>
-      <div class="lg:col-span-3 flex flex-col gap-y-4 lg:gap-y-8">
+      <div class="mb-52 md:mb-0 order-3 md:order-2 md:col-span-3 flex flex-col gap-y-4 md:gap-y-8">
         <div>Unterstützt durch:</div>
         <div>
           <a 
@@ -25,7 +27,7 @@
           </a>
         </div>
       </div>
-      <div class="lg:col-span-3">
+      <div class="mb-52 md:mb-0 md:col-span-3 order-2 md:order-3">
         <nav>
           <ul class="flex flex-col gap-y-2">
             <li>
@@ -52,7 +54,7 @@
           </ul>
         </nav>
       </div>
-      <div class="lg:col-span-3">
+      <div class="md:col-span-3 order-4">
         <nav>
           <ul class="flex flex-col gap-y-2">
             <li>

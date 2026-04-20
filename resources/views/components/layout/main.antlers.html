@@ -1,13 +1,13 @@
 <main class="flex-1 md:border-x border-x-crimson dark:border-x-white w-full max-w-page mx-auto">
   {{ slot }}
 
-  <section class="min-h-[var(--viewport-height)] lg:min-h-[var(--viewport-height-lg)] flex flex-col justify-end p-40 border-b border-b-crimson dark:border-b-white">
+  <section class="min-h-[var(--viewport-height)] md:min-h-[var(--viewport-height-md)] flex flex-col justify-end p-40 border-b border-b-crimson dark:border-b-white">
 
     <div class="text-center text-3xl">
 
-      <div class="relative mx-auto w-fit px-20 text-crimson dark:text-white">
+      <div class="relative mx-auto w-full sm:w-fit text-crimson dark:text-white">
         {{ partial:components/icons/bracket class="absolute left-0 top-0 h-full w-auto text-crimson dark:text-white" }}
-          <div class="text-center px-32">
+          <div class="text-center text-[1.5rem] lg:text-[3.25rem] leading-[0.90] px-32 lg:px-48">
             Du hast die zündende Idee?<br>Wir versichern dich im Brandfall.
           </div>
         {{ partial:components/icons/bracket class="absolute right-0 top-0 h-full w-auto text-crimson dark:text-white rotate-180" }}
