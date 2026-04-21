@@ -12,6 +12,31 @@ tabs:
               required: true
               validate:
                 - required
+          -
+            handle: blocks
+            field:
+              type: replicator
+              display: Inhaltselemente
+              collapse: true
+              sets:
+                main_elements:
+                  display: 'Standard Elemente'
+                  icon: package-box-crate
+                  sets:
+                    intro:
+                      display: Intro
+                      instructions: 'Intro hinzufügen'
+                      icon: text-small
+                      fields:
+                        -
+                          import: intro
+                    about:
+                      display: 'Über uns'
+                      instructions: 'Über uns hinzfügen'
+                      icon: text-formatting-image-bottom
+                      fields:
+                        -
+                          import: about
   settings:
     display: Settings
     sections:
@@ -37,4 +62,5 @@ tabs:
             handle: slug
             field:
               type: slug
+              localizable: true
               validate: 'max:200'

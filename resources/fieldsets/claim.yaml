@@ -1,0 +1,24 @@
+title: Claim
+fields:
+  -
+    handle: claim
+    field:
+      type: replicator
+      display: Claim
+      sets:
+        claim_line:
+          display: 'Claim - Zeile'
+          instructions: 'Zeile hinzufügen'
+          icon: text-small
+          sets:
+            claim_line:
+              display: "Claim -\_Zeile"
+              instructions: 'Zeile hinzufügen'
+              icon: text-small
+              fields:
+                -
+                  handle: claim_line
+                  field:
+                    type: text
+                    display: Zeile
+                    placeholder: 'Zeile hinzfügen'
