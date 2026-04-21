@@ -9,9 +9,9 @@
     </div>
     <div class="flex flex-col md:flex-row justify-between text-[1rem] leading-[1.28]">
       <div class="mb-52 md:mb-0 order-1 md:col-span-3">
-        <address class="not-italic">
-          <strong>Zünder<br>Ort für kreative Explosionen</strong><br>
-          Nüschelerstrasse 45<br>8021 Zürich
+        <address class="not-italic flex flex-col">
+          <span class="font-bold">{{ address:name | nl2br }}</span>
+          <span>{{ address:address | nl2br }}</span>
         </address>
       </div>
       <div class="mb-52 md:mb-0 order-3 md:order-2 md:col-span-3 flex flex-col gap-y-4 md:gap-y-8">
@@ -28,51 +28,10 @@
         </div>
       </div>
       <div class="mb-52 md:mb-0 md:col-span-3 order-2 md:order-3">
-        <nav>
-          <ul class="flex flex-col gap-y-2">
-            <li>
-              <a 
-                href="/showcase" 
-                class="text-crimson dark:text-white hover:text-crimson/60 dark:hover:text-white/60 transition-colors">
-                Showcase
-              </a>
-            </li>
-            <li>
-              <a 
-                href="/agenda" 
-                class="text-crimson dark:text-white hover:text-crimson/60 dark:hover:text-white/60 transition-colors">
-                Agenda
-              </a>
-            </li>
-            <li>
-              <a 
-                href="/archiv" 
-                class="text-crimson dark:text-white hover:text-crimson/60 dark:hover:text-white/60 transition-colors">
-                Archiv
-              </a>
-            </li>
-          </ul>
-        </nav>
+        {{ partial:components/menu/main/container }}
       </div>
       <div class="md:col-span-3 order-4">
-        <nav>
-          <ul class="flex flex-col gap-y-2">
-            <li>
-              <a 
-                href="/kontakt" 
-                class="text-crimson dark:text-white hover:text-crimson/60 dark:hover:text-white/60 transition-colors">
-                Kontakt
-              </a>
-            </li>
-            <li>
-              <a 
-                href="/impressum" 
-                class="text-crimson dark:text-white hover:text-crimson/60 dark:hover:text-white/60 transition-colors">
-                Impressum
-              </a>
-            </li>
-          </ul>
-        </nav>
+        {{ partial:components/menu/privacy/container }}
       </div>
     </div>
   </footer>
