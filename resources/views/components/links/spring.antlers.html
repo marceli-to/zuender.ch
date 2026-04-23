@@ -1,0 +1,7 @@
+<a href="{{ url }}" class="relative w-fit px-24 block group {{ class }}">
+  {{ partial:components/icons/bracket class="absolute left-0 top-0 h-full w-auto text-crimson dark:text-white group-hover:-translate-x-16 transition-transform duration-800 ease-spring" }}
+  <span class="block text-[1.125rem] lg:text-[1.25rem] group-hover:underline decoration-2 underline-offset-2">
+    {{ title ?? url }}
+  </span>
+  {{ partial:components/icons/bracket class="absolute right-0 top-0 h-full w-auto text-crimson dark:text-white rotate-180 group-hover:translate-x-16 transition-transform duration-800 ease-spring" }}
+</a>

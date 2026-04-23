@@ -1,0 +1,15 @@
+title: Space
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Titel
+  -
+    import: editor
+    prefix: top_
+  -
+    import: claim
+  -
+    import: editor
+    prefix: bottom_

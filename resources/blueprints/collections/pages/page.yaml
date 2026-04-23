@@ -32,11 +32,18 @@ tabs:
                           import: intro
                     about:
                       display: 'Über uns'
-                      instructions: 'Über uns hinzfügen'
+                      instructions: 'Über uns hinzufügen'
                       icon: text-formatting-image-bottom
                       fields:
                         -
                           import: about
+                    space:
+                      display: Space
+                      instructions: 'Space-Inhalt hinzufügen'
+                      icon: text-formatting-image-top
+                      fields:
+                        -
+                          import: space
   settings:
     display: Settings
     sections:
