@@ -1,0 +1,18 @@
+/* Scroll-driven header animations */
+@keyframes header-logo-shrink {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 425px;
+  }
+}
+
+@keyframes header-subtitle-slide {
+  from {
+     opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

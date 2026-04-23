@@ -1,17 +1,23 @@
 @import "tailwindcss";
 @import "./partials/fonts.css";
 @import "./partials/spacing.css";
+@import "./partials/animations.css";
+
 @source "../views";
 @source "../../content";
 @source '../**/*.js';
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --font-chroma: 'Chroma ST', sans-serif;
   --font-trille: 'Trille filled Condensed', sans-serif;
   --font-trille-extra: 'Trille Extra filled Condensed', sans-serif;
+
   --color-crimson: #FF0000;
+
   --container-page: 94.5rem;
+
   --ease-spring: linear(
     0, 0.009, 0.035 2.1%, 0.141 4.4%, 0.723 12.9%, 0.938, 1.099, 1.217 19%,
     1.257, 1.288, 1.311, 1.324, 1.329 24.2%, 1.325, 1.31, 1.288, 1.256,
@@ -25,6 +31,7 @@
   :root {
     --header-height: 6.25rem;
     --header-height-md: 12.5rem;
+
     --viewport-height: calc(100vh - var(--header-height) - 2rem);
     --viewport-height-md: calc(100vh - var(--header-height-md) - 4rem);
   }
@@ -38,21 +45,18 @@ strong, b {
   @apply font-bold;
 }
 
-/* Scroll-driven header animations */
-@keyframes header-logo-shrink {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 425px;
-  }
+article p:not(:last-child) {
+  @apply mb-20 md:mb-28 lg:mb-36;
 }
 
-@keyframes header-subtitle-slide {
-  from {
-     opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+h2, 
+h3 {
+  @apply tracking-[60%] uppercase text-center;
 }
+
+article h2,
+article h3 {
+  @apply mb-6 
+}
+
+

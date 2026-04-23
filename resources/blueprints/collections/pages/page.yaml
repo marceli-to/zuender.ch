@@ -26,7 +26,7 @@ tabs:
                     intro:
                       display: Intro
                       instructions: 'Intro hinzufügen'
-                      icon: text-small
+                      icon: text-formatting-image-top
                       fields:
                         -
                           import: intro
@@ -44,6 +44,20 @@ tabs:
                       fields:
                         -
                           import: space
+                    contact:
+                      display: Kontakt
+                      instructions: 'Kontakt hinzufügen'
+                      icon: text-formatting-image-top
+                      fields:
+                        -
+                          import: contact
+                    text:
+                      display: 'Titel, Text'
+                      instructions: 'Text hinzufügen'
+                      icon: text-formatting-initial-letter
+                      fields:
+                        -
+                          import: text
   settings:
     display: Settings
     sections:

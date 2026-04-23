@@ -1,0 +1,9 @@
+title: Contact
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Titel
+  -
+    import: editor

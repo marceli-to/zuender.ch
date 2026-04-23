@@ -9,11 +9,19 @@
         <div
           class="hidden md:block w-full mx-auto animate-[header-logo-shrink_linear_both] [animation-timeline:scroll()] [animation-range:0_480px] md:px-28"
           data-header-logo>
-          {{ partial:components/logos/zuender }}
+            <a 
+              href="/" 
+              aria-label="Startseite Zünder">
+              {{ partial:components/logos/zuender }}
+            </a>
         </div>
 
         <div class="md:hidden">
-          {{ partial:components/logos/zuender size="small" class="w-76 h-auto" }}
+          <a 
+          href="/" 
+          aria-label="Startseite Zünder">
+            {{ partial:components/logos/zuender size="small" class="w-76 h-auto" }}
+          </a>
         </div>
 
       </div>

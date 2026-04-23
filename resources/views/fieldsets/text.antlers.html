@@ -1,0 +1,15 @@
+<section class="lg:pt-40 lg:pb-120 md:px-16 flex flex-col justify-center md:border-b md:border-b-crimson dark:border-b-white">
+
+  {{ if title }}
+    <h2 class="mb-20 lg:mb-32">
+      {{ title }}
+    </h2>
+  {{ /if }}
+
+  {{ if editor }}
+    <article class="max-w-[40rem] md:mx-auto">
+      {{ partial:fieldsets/editor :content="editor" }}
+    </article>
+  {{ /if }}
+
+</section>

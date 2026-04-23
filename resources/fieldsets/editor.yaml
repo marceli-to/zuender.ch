@@ -8,6 +8,7 @@ fields:
       buttons:
         - h2
         - h3
+        - bold
         - unorderedlist
         - removeformat
         - anchor
@@ -16,6 +17,7 @@ fields:
         - pages
       container: assets
       remove_empty_nodes: true
+      collapse: true
       sets:
         main:
           display: Main

@@ -6,3 +6,18 @@
   {{ partial:fieldsets/about }}
 {{ /if }}
 
+{{ if type == 'space' }}
+  {{ partial:fieldsets/space }}
+{{ /if }}
+
+{{ if type == 'contact' }}
+  {{ partial:fieldsets/contact }}
+{{ /if }}
+
+{{ if type == 'text' }}
+  {{ partial:fieldsets/text }}
+{{ /if }}
+
+
+
+
