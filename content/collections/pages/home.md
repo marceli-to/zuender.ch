@@ -63,14 +63,22 @@ blocks:
             type: text
             text: 'Wir suchen Projekte, die Menschen zusammenbringen, Diskussionen anstossen oder neue Perspektiven eröffnen – von Pop-up Stores über Lesungen und Workshops bis hin zu Ausstellungen oder Installationen. Der Space ist bewusst bezahlbar, flexibel und offen. Er richtet sich an ein junges, neugieriges Publikum und lebt vom Dialog zwischen Besucher*innen, Projekt und Ort.'
       -
-        type: set
-        attrs:
-          id: iQcW5XrgvwXF-yGPqK9w0
-          values:
-            type: link
-            url: 'https://maps.app.goo.gl/qhyXY3VEYCPkyb4x6'
-            title: 'Nüschelerstrasse 47, 8001 Zürich.'
-            target: _blank
+        type: paragraph
+        content:
+          -
+            type: text
+            text: '→ '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://maps.app.goo.gl/qhyXY3VEYCPkyb4x6'
+                  rel: null
+                  target: _blank
+                  title: null
+            text: 'Nüschelerstrasse 47, 8001 Zürich.'
     claim:
       -
         id: tYdhyNQwoHzr0otyrrgsP
@@ -86,7 +94,7 @@ blocks:
       -
         type: heading
         attrs:
-          level: 3
+          level: 2
         content:
           -
             type: text
@@ -109,5 +117,5 @@ blocks:
     type: space
     enabled: true
 updated_by: 837ce95e-89bd-471c-af1b-fefad55d3952
-updated_at: 1776931202
+updated_at: 1776948286
 ---

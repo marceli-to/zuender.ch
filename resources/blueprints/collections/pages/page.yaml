@@ -51,13 +51,13 @@ tabs:
                       fields:
                         -
                           import: contact
-                    text:
+                    title_text:
                       display: 'Titel, Text'
                       instructions: 'Text hinzufügen'
                       icon: text-formatting-initial-letter
                       fields:
                         -
-                          import: text
+                          import: title_text
   settings:
     display: Settings
     sections:

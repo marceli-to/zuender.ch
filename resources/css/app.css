@@ -29,11 +29,13 @@
 
 @layer base {
   :root {
-    --header-height: 6.25rem;
-    --header-height-md: 12.5rem;
+    --header-height: 8rem;
+    --header-height-md: 14rem;
+    --header-height-lg: 17rem;
 
     --viewport-height: calc(100vh - var(--header-height) - 2rem);
-    --viewport-height-md: calc(100vh - var(--header-height-md) - 4rem);
+    --viewport-height-md: calc(100vh - var(--header-height-md) - 3rem);
+    --viewport-height-lg: calc(100vh - var(--header-height-lg) - 4rem);
   }
 }
 
@@ -45,18 +47,37 @@ strong, b {
   @apply font-bold;
 }
 
-article p:not(:last-child) {
-  @apply mb-20 md:mb-28 lg:mb-36;
-}
-
-h2, 
-h3 {
+h2 {
   @apply tracking-[60%] uppercase text-center;
 }
 
-article h2,
-article h3 {
+h3 {
+  @apply font-bold
+}
+
+article h2 {
   @apply mb-6 
+}
+
+article p:not(:last-child),
+article ul:not(:last-child) {
+  @apply mb-20 md:mb-28 lg:mb-36;
+}
+
+article ul {
+  @apply list-disc m-0 p-0;
+}
+
+article li {
+  @apply ml-[1em]
+}
+
+article li p {
+  @apply inline
+}
+
+article a:hover {
+  @apply underline decoration-2 underline-offset-2 
 }
 
 

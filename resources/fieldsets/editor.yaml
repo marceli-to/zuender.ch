@@ -22,37 +22,6 @@ fields:
         main:
           display: Main
           sets:
-            link:
-              display: Link
-              instructions: 'Link hinzufügen'
-              icon: link
-              fields:
-                -
-                  handle: url
-                  field:
-                    type: link
-                    display: URL
-                    collections:
-                      - pages
-                    container: assets
-                -
-                  handle: title
-                  field:
-                    type: text
-                    display: Titel
-                -
-                  handle: target
-                  field:
-                    type: select
-                    display: Target
-                    default: _self
-                    options:
-                      -
-                        key: _self
-                        value: 'Gleiches Fenster'
-                      -
-                        key: _blank
-                        value: 'Neues Fenster'
             button:
               display: Button
               instructions: 'Button hinzufügen'

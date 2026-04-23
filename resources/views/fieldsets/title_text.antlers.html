@@ -1,0 +1,15 @@
+<section class="pt-20 pb-60 lg:pt-40 lg:pb-120 md:px-16 flex flex-col justify-center md:border-b md:border-b-crimson dark:border-b-white scroll-mt-(--header-height)  md:scroll-mt-(--header-height-md) lg:scroll-mt-(--header-height-lg)" id="{{ title | slugify }}">
+
+  {{ if title }}
+    <h2 class="mb-16 md:mb-24 lg:mb-32">
+      {{ title }}
+    </h2>
+  {{ /if }}
+
+  {{ if editor }}
+    <article class="max-w-[40rem] md:mx-auto">
+      {{ partial:fieldsets/editor :content="editor" }}
+    </article>
+  {{ /if }}
+
+</section>
