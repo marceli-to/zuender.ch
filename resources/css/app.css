@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "./partials/fonts.css";
+@import "./partials/font-sizes.css";
 @import "./partials/spacing.css";
 @import "./partials/animations.css";
 
