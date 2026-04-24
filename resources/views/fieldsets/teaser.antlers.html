@@ -1,0 +1,9 @@
+<section class="flex flex-col justify-center md:border-b md:border-b-crimson dark:border-b-white pt-16 pb-32 lg:pt-32 lg:pb-64">
+  {{ partial:components/swiper/container type="agenda" navigation="true" }}
+    {{ entries }}
+      {{ partial:components/swiper/slide }}
+        {{ partial:components/teaser/item title="{title}" date_start="{date_start}" date_end="{date_end}" }}
+      {{ /partial:components/swiper/slide }}
+    {{ /entries }}
+  {{ /partial:components/swiper/container }}
+</section>

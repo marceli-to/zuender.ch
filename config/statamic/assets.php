@@ -83,10 +83,25 @@ return [
         */
 
         'presets' => [
-            'sm' => ['w' => 640, 'format' => 'webp'],
-            'md' => ['w' => 1024, 'format' => 'webp'],
-            'lg' => ['w' => 1536, 'format' => 'webp'],
-            'xl' => ['w' => 2000, 'format' => 'webp'],
+          'md-webp' => ['w' => 768, 'h' => 10000, 'q' => 90, 'fit' => 'contain', 'fm' => 'webp'],
+          'lg-webp' => ['w' => 1280, 'h' => 10000, 'q' => 90, 'fit' => 'contain', 'fm' => 'webp'],
+          'xl-webp' => ['w' => 1440, 'h' => 10000, 'q' => 90, 'fit' => 'contain', 'fm' => 'webp'],
+          '2xl-webp' => ['w' => 1680, 'h' => 10000, 'q' => 90, 'fit' => 'contain', 'fm' => 'webp'],
+          'md' => ['w' => 768, 'h' => 10000, 'q' => 90, 'fit' => 'contain'],
+          'lg' => ['w' => 1280, 'h' => 10000, 'q' => 90, 'fit' => 'contain'],
+          'xl' => ['w' => 1440, 'h' => 10000, 'q' => 90, 'fit' => 'contain'],
+          '2xl' => ['w' => 1680, 'h' => 10000, 'q' => 90, 'fit' => 'contain'],
+
+          'md-16x10-webp' => ['w' => 768, 'h' => 480, 'q' => 90, 'fit' => 'crop_focal', 'fm' => 'webp'],
+          'lg-16x10-webp' => ['w' => 1280, 'h' => 800, 'q' => 90, 'fit' => 'crop_focal', 'fm' => 'webp'],
+          'xl-16x10-webp' => ['w' => 1440, 'h' => 900, 'q' => 90, 'fit' => 'crop_focal', 'fm' => 'webp'],
+          '2xl-16x10-webp' => ['w' => 1680, 'h' => 1050, 'q' => 90, 'fit' => 'crop_focal', 'fm' => 'webp'],
+          'md-16x10' => ['w' => 768, 'h' => 480, 'q' => 90, 'fit' => 'crop_focal'],
+          'lg-16x10' => ['w' => 1280, 'h' => 800, 'q' => 90, 'fit' => 'crop_focal'],
+          'xl-16x10' => ['w' => 1440, 'h' => 900, 'q' => 90, 'fit' => 'crop_focal'],
+          '2xl-16x10' => ['w' => 1680, 'h' => 1050, 'q' => 90, 'fit' => 'crop_focal'],
+
+          'max_upload_size' => ['w' => 4000, 'h' => 4000, 'fit' => 'max'],
         ],
 
         /*

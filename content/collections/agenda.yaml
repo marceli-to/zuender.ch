@@ -1,0 +1,7 @@
+title: Agenda
+icon: calendar
+template: default
+layout: layout
+revisions: false
+sort_by: date_start
+sort_dir: asc

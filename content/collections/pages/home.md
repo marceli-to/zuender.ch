@@ -2,7 +2,7 @@
 id: home
 blueprint: pages
 title: Home
-template: home
+template: default
 blocks:
   -
     id: ks2XWontd4QCR3ao79YVe
@@ -52,6 +52,14 @@ blocks:
         url: 'entry::ab435915-a3df-4540-b3fb-609bc466cac8'
         type: link
         enabled: true
+  -
+    id: KwdCRVdkSKPLCnZ8Kl2oJ
+    type: teaser
+    enabled: true
+    entries:
+      - 901463d3-6f71-4863-a01d-5e394ebe7bb3
+      - 3f47d602-79f3-4ae7-a1a2-811674196ac8
+      - 8718d535-a9c3-4f58-916b-830e53da7698
   -
     id: ZBWVo_F6_gylIAAmOGVaj
     title: Space
@@ -117,5 +125,5 @@ blocks:
     type: space
     enabled: true
 updated_by: 837ce95e-89bd-471c-af1b-fefad55d3952
-updated_at: 1776948286
+updated_at: 1777012914
 ---

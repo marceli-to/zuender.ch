@@ -58,11 +58,18 @@ tabs:
                       fields:
                         -
                           import: title_text
+                    teaser:
+                      display: Teaser
+                      instructions: 'Agenda-Einträge auswählen'
+                      icon: calendar
+                      fields:
+                        -
+                          import: teaser
   settings:
     display: Settings
     sections:
       -
-        display: 'New Section'
+        display: Template
         fields:
           -
             handle: template

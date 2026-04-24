@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-B3vy8HMB.css",
+    "file": "assets/app-veGz6VRE.css",
     "name": "app",
     "names": [
       "app.css"
@@ -51,9 +51,12 @@
     "src": "resources/fonts/LSTrilleFilled-filledCondensed.woff2"
   },
   "resources/js/app.js": {
-    "file": "assets/app-uYgI6j6a.js",
+    "file": "assets/app-CZLEfR2P.js",
     "name": "app",
     "src": "resources/js/app.js",
-    "isEntry": true
+    "isEntry": true,
+    "css": [
+      "assets/app-BgJ4idxy.css"
+    ]
   }
 }

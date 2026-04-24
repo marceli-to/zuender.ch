@@ -14,3 +14,5 @@ preferences:
         - date
         - site
         - status
+    agenda:
+      view: list

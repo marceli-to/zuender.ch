@@ -1,0 +1,10 @@
+title: Teaser
+fields:
+  -
+    handle: entries
+    field:
+      type: entries
+      display: Agenda-Einträge
+      collections:
+        - agenda
+      mode: default

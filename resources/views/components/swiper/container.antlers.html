@@ -1,0 +1,17 @@
+<div class="swiper w-full {{ class }}"{{ if type }} data-{{ type }}{{ /if }}>
+
+  <div class="swiper-wrapper">
+    {{ slot }}
+  </div>
+
+  {{ if navigation }}
+    <button type="button" class="swiper-btn-prev cursor-pointer absolute z-10 left-12 top-1/2 -translate-y-1/2 w-12 h-21 md:w-18 md:h-31 lg:w-26 lg:h-45" aria-label="Vorheriger Slide">
+      {{ partial:components/icons/chevron-left class="w-full h-auto" }}
+    </button>
+
+    <button type="button" class="swiper-btn-next cursor-pointer absolute z-10 right-12 top-1/2 -translate-y-1/2 w-12 h-21 md:w-18 md:h-31 lg:w-26 lg:h-45" aria-label="Nächster Slide">
+      {{ partial:components/icons/chevron-right class="w-full h-auto" }}
+    </button>
+  {{ /if }}
+
+</div>

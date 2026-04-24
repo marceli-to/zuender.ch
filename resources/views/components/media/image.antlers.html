@@ -1,29 +1,41 @@
 {{#
-  Responsive image component with WebP and srcset
-  @param image - Asset reference or image path
+  Responsive image component with WebP + srcset width descriptors
+  @param image - Asset reference
   @param alt - Alt text
+  @param preset - Optional preset variant suffix, e.g. "16x10" (omit for contain)
+  @param sizes - CSS sizes attribute (default: "100vw")
   @param class - CSS classes for the img element
-  @param sizes - Sizes attribute (default: 100vw)
-  @param loading - Loading strategy: lazy or eager (default: lazy)
+  @param wrapperClass - CSS classes for the figure wrapper
+  @param captionClass - CSS classes for the figcaption element
+  @param height - Override image height
+  @param width - Override image width
+  @param eager - Load eagerly (default: false)
 #}}
-<picture>
-  <source
-    type="image/webp"
-    srcset="{{ glide src="{image}" width="400" format="webp" }} 400w,
-           {{ glide src="{image}" width="800" format="webp" }} 800w,
-           {{ glide src="{image}" width="1200" format="webp" }} 1200w,
-           {{ glide src="{image}" width="1600" format="webp" }} 1600w,
-           {{ glide src="{image}" width="2000" format="webp" }} 2000w"
-    sizes="{{ sizes ?? '100vw' }}">
-  <img
-    src="{{ glide src="{image}" width="1200" }}"
-    srcset="{{ glide src="{image}" width="400" }} 400w,
-           {{ glide src="{image}" width="800" }} 800w,
-           {{ glide src="{image}" width="1200" }} 1200w,
-           {{ glide src="{image}" width="1600" }} 1600w,
-           {{ glide src="{image}" width="2000" }} 2000w"
-    sizes="{{ sizes ?? '100vw' }}"
-    alt="{{ alt }}"
-    {{ if class }}class="{{ class }}"{{ /if }}
-    loading="{{ loading ?? 'lazy' }}">
-</picture>
+<figure class="{{ wrapperClass }}">
+  <picture>
+    <source
+      type="image/webp"
+      srcset="{{ glide:image preset="{{ preset ? 'md-{{ preset }}-webp' : 'md-webp' }}" }} 768w,
+              {{ glide:image preset="{{ preset ? 'lg-{{ preset }}-webp' : 'lg-webp' }}" }} 1280w,
+              {{ glide:image preset="{{ preset ? 'xl-{{ preset }}-webp' : 'xl-webp' }}" }} 1440w,
+              {{ glide:image preset="{{ preset ? '2xl-{{ preset }}-webp' : '2xl-webp' }}" }} 1680w"
+      sizes="{{ sizes ?? '100vw' }}">
+    <img
+      src="{{ glide:image preset="{{ preset ? 'lg-{{ preset }}' : 'lg' }}" }}"
+      srcset="{{ glide:image preset="{{ preset ? 'md-{{ preset }}' : 'md' }}" }} 768w,
+              {{ glide:image preset="{{ preset ? 'lg-{{ preset }}' : 'lg' }}" }} 1280w,
+              {{ glide:image preset="{{ preset ? 'xl-{{ preset }}' : 'xl' }}" }} 1440w,
+              {{ glide:image preset="{{ preset ? '2xl-{{ preset }}' : '2xl' }}" }} 1680w"
+      sizes="{{ sizes ?? '100vw' }}"
+      alt="{{ alt }}"
+      height="{{ height ?? image:height }}"
+      width="{{ width ?? image:width }}"
+      class="block {{ class ?? '' }}"
+      loading="{{ eager ? 'eager' : 'lazy' }}">
+  </picture>
+  {{ if alt }}
+    <figcaption class="{{ captionClass }}">
+      {{ alt | nl2br }}
+    </figcaption>
+  {{ /if }}
+</figure>

@@ -7,6 +7,7 @@
   {{ /if }}
 
   <div class="px-16 mt-32 mb-64 md:mt-48 md:mb-96 lg:mt-64 lg:mb-128">
+    
     {{ if top_editor }}
       <article class="max-w-[40rem] mx-auto">
         {{ partial:fieldsets/editor :content="top_editor" }}
@@ -17,12 +18,12 @@
       {{ partial:components/claim/container class="my-60 md:my-90 lg:my-120" }}
     {{ /if }}
 
-
     {{ if bottom_editor }}
       <article class="max-w-[40rem] mx-auto">
         {{ partial:fieldsets/editor :content="bottom_editor" }}
       </article>
     {{ /if }}
+
   </div>
 
 </section>
