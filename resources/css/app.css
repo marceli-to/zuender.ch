@@ -31,8 +31,8 @@
 @layer base {
   :root {
     --header-height: 8rem;
-    --header-height-md: 14rem;
-    --header-height-lg: 17rem;
+    --header-height-md: 11rem;
+    --header-height-lg: 14rem;
 
     --viewport-height: calc(100vh - var(--header-height) - 2rem);
     --viewport-height-md: calc(100vh - var(--header-height-md) - 3rem);
