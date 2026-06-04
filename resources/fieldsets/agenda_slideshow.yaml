@@ -1,10 +1,9 @@
-title: Teaser
+title: 'Agenda Slideshow'
 fields:
   -
     handle: entries
     field:
       type: entries
-      display: Agenda-Einträge
+      display: Einträge
       collections:
         - agenda
-      mode: default

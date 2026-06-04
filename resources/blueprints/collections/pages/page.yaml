@@ -58,13 +58,13 @@ tabs:
                       fields:
                         -
                           import: title_text
-                    teaser:
-                      display: Teaser
-                      instructions: 'Agenda-Einträge auswählen'
+                    agenda_slideshow:
+                      display: 'Agenda Slideshow'
+                      instructions: 'Einträge auswählen'
                       icon: calendar
                       fields:
                         -
-                          import: teaser
+                          import: agenda_slideshow
   settings:
     display: Settings
     sections:

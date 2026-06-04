@@ -37,11 +37,16 @@ tabs:
               type: text
               display: Öffnungszeiten
               width: 50
+  teaser:
+    display: Teaser
+    sections:
+      -
+        fields:
           -
             handle: teaser_image
             field:
               type: group
-              display: Teaserbild
+              display: Bild
               fields:
                 -
                   handle: image

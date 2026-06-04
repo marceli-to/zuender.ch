@@ -1,7 +1,16 @@
 title: Agenda
 icon: calendar
-template: default
+template: agenda
 layout: layout
 revisions: false
+route: '/agenda/{{ slug }}'
 sort_by: date_start
 sort_dir: asc
+date_behavior:
+  past: null
+  future: null
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

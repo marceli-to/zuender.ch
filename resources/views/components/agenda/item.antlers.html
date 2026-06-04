@@ -1,7 +1,7 @@
-<div class="md:mx-16 lg:mx-24">
+<a href="{{ url }}" class="block md:mx-16 lg:mx-24">
 
   {{ if date_start || date_end }}
-    {{ partial:components/teaser/pill class="mx-auto mb-8 lg:mb-12" }}
+    {{ partial:components/agenda/pill class="mx-auto mb-8 lg:mb-12" }}
       {{ if date_start && date_end }}
         {{ date_start | format('d.m.') }} – {{ date_end | format('d.m.') }}
       {{ elseif date_start && ! date_end }}
@@ -9,7 +9,7 @@
       {{ elseif ! date_start && date_end }}
         {{ date_end | format('d.m.') }}
       {{ /if }}
-    {{ /partial:components/teaser/pill }}
+    {{ /partial:components/agenda/pill }}
   {{ /if }}
   
   {{ if title }}
@@ -23,14 +23,14 @@
   {{ if type || opening_hours }}
     <div class="mt-8 md:mt-12 mx-16 md:mx-32 lg:mx-48 flex flex-col gap-y-8 sm:gap-y-0 items-center sm:flex-row justify-between">
       {{ if type }}
-        {{ partial:components/teaser/pill class="uppercase" }}
+        {{ partial:components/agenda/pill class="uppercase" }}
           {{ type }}
-        {{ /partial:components/teaser/pill }}
+        {{ /partial:components/agenda/pill }}
       {{ /if }}
       {{ if opening_hours }}
-        {{ partial:components/teaser/pill }}
+        {{ partial:components/agenda/pill }}
           {{ opening_hours }}
-        {{ /partial:components/teaser/pill }}
+        {{ /partial:components/agenda/pill }}
       {{ /if }}
     </div>
   {{ /if }}
@@ -45,4 +45,4 @@
         :captionClass="'text-center text-xxs md:text-xs mt-6 md:mt-12'" }}
     </div>
   {{ /if }}
-</div>
+</a>

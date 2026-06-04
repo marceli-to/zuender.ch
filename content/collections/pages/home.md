@@ -54,7 +54,7 @@ blocks:
         enabled: true
   -
     id: KwdCRVdkSKPLCnZ8Kl2oJ
-    type: teaser
+    type: agenda_slideshow
     enabled: true
     entries:
       - 901463d3-6f71-4863-a01d-5e394ebe7bb3
