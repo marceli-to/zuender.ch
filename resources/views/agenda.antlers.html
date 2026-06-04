@@ -1,31 +1,35 @@
 
 {{ partial:components/agenda/header heading="h1" }}
 
-<figure class="relative mt-20 md:mt-40">
-  <div class="absolute inset-0 pointer-events-none hidden md:block">
-    <div class="absolute inset-0 rounded-full border border-crimson dark:border-white"></div>
-    <div class="absolute inset-y-0 left-80 right-80 rounded-full border border-crimson dark:border-white hidden lg:block"></div>
-    <div class="absolute inset-y-0 left-160 right-160 rounded-full border border-crimson dark:border-white hidden xl:block"></div>
-    <div class="absolute inset-y-0 left-240 right-240 rounded-full border border-crimson dark:border-white hidden xl:block"></div>
-  </div>
+<div class="{{ teaser_image:caption ? 'pb-60 md:pb-80' : '' }}">
+  <figure class="relative mt-20 md:mt-40">
+    <div class="absolute inset-0 pointer-events-none hidden md:block">
+      <div class="absolute inset-0 rounded-full border border-crimson dark:border-white"></div>
+      <div class="absolute inset-y-0 left-80 right-80 rounded-full border border-crimson dark:border-white hidden lg:block"></div>
+      <div class="absolute inset-y-0 left-160 right-160 rounded-full border border-crimson dark:border-white hidden xl:block"></div>
+      <div class="absolute inset-y-0 left-240 right-240 rounded-full border border-crimson dark:border-white hidden xl:block"></div>
+    </div>
 
-  <div class="overflow-hidden rounded-full border border-crimson dark:border-white md:max-w-[calc(100%-160px)] lg:max-w-[calc(100%-320px)] xl:max-w-[calc(100%-640px)] mx-auto">
-    {{ partial:components/media/image 
-      :image="teaser_image:image" 
-      :alt="teaser_image:caption" 
-      preset="16x10"
-      sizes="(min-width: 1024px) 50rem, 100vw"
-      class="w-full h-full object-contain"
-      :alt="false" }}
-  </div>
-  
-  {{ if teaser_image:caption }}
-    <figcaption class="absolute -bottom-70 left-1/2 -translate-x-1/2 w-full text-center text-xxs md:text-xs">
-      {{ teaser_image:caption | nl2br }}
-    </figcaption>
-  {{ /if }}
-</figure>
+    <div class="overflow-hidden rounded-full border border-crimson dark:border-white md:max-w-[calc(100%-160px)] lg:max-w-[calc(100%-320px)] xl:max-w-[calc(100%-640px)] mx-auto">
+      {{ partial:components/media/image 
+        :image="teaser_image:image" 
+        :alt="teaser_image:caption" 
+        preset="16x10"
+        sizes="(min-width: 1024px) 50rem, 100vw"
+        class="w-full h-full object-contain"
+        :alt="false" }}
+    </div>
+    
+    {{ if teaser_image:caption }}
+      <figcaption class="absolute -bottom-50 md:-bottom-70 left-1/2 -translate-x-1/2 w-full text-center text-xxs md:text-xs">
+        {{ teaser_image:caption | nl2br }}
+      </figcaption>
+    {{ /if }}
+  </figure>
+</div>
 
-{{ blocks }}
-  {{ partial:components/blocks }}
-{{ /blocks }}
+<div class="flex flex-col gap-y-40 lg:gap-y-80 pb-64 md:pb-96">
+  {{ blocks }}
+    {{ partial:components/agenda/blocks }}
+  {{ /blocks }}
+</div>

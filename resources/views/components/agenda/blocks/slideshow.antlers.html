@@ -1,0 +1,21 @@
+{{ if slides }}
+  {{ partial:components/swiper/container type="slideshow" navigation="true" }}
+    {{ slides }}
+      {{ if image }}
+        {{ partial:components/swiper/slide }}
+          {{ partial:components/media/image
+            :image="image"
+            preset="16x10"
+            sizes="(min-width: 1024px) 50rem, 100vw"
+            wrapperClass="md:max-w-[calc(100%-160px)] lg:max-w-[calc(100%-320px)] mx-auto md:shadow-[12px_12px_13.6px_0px_#ff0000]"
+            class="w-full h-auto"
+            :alt="false" }}
+
+          <p class="text-center text-xxs md:text-xs mt-12 md:mt-36">
+            {{ count }}/{{ total_results }}{{ if caption }} {{ caption | nl2br }}{{ /if }}
+          </p>
+        {{ /partial:components/swiper/slide }}
+      {{ /if }}
+    {{ /slides }}
+  {{ /partial:components/swiper/container }}
+{{ /if }}

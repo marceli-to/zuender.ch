@@ -1,0 +1,30 @@
+title: Slideshow
+fields:
+  -
+    handle: slides
+    field:
+      type: replicator
+      display: Slideshow
+      sets:
+        slides:
+          display: Slideshow
+          instructions: 'Bilder hinzufügen'
+          icon: media-image-picture-gallery
+          sets:
+            slide:
+              display: Bild
+              instructions: 'Bild hinzufügen'
+              icon: media-image-picture-gallery
+              fields:
+                -
+                  handle: image
+                  field:
+                    type: assets
+                    display: Bild
+                    container: assets
+                    max_files: 1
+                -
+                  handle: caption
+                  field:
+                    type: textarea
+                    display: Bildlegende

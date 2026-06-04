@@ -1,0 +1,15 @@
+{{ if type == 'text' }}
+  {{ partial:components/agenda/blocks/text }}
+{{ /if }}
+
+{{ if type == 'claim' }}
+  {{ partial:components/agenda/blocks/claim }}
+{{ /if }}
+
+{{ if type == 'links' }}
+  {{ partial:components/agenda/blocks/links }}
+{{ /if }}
+
+{{ if type == 'slideshow' }}
+  {{ partial:components/agenda/blocks/slideshow }}
+{{ /if }}

@@ -23,3 +23,9 @@ fields:
                       - pages
                     type: link
                     display: URL
+                -
+                  handle: link_title
+                  field:
+                    type: text
+                    display: Titel
+                    instructions: 'Optionaler Titel'

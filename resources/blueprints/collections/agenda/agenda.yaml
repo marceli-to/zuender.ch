@@ -37,6 +37,47 @@ tabs:
               type: text
               display: Öffnungszeiten
               width: 50
+      -
+        fields:
+          -
+            handle: blocks
+            field:
+              type: replicator
+              display: Inhaltselemente
+              collapse: true
+              sets:
+                main_elements:
+                  display: 'Standard Elemente'
+                  icon: package-box-crate
+                  sets:
+                    text:
+                      display: Text
+                      instructions: 'Text hinzufügen'
+                      icon: text-formatting-initial-letter
+                      fields:
+                        -
+                          import: editor
+                    claim:
+                      display: Claim
+                      instructions: 'Claim hinzufügen'
+                      icon: text-formatting-image-bottom
+                      fields:
+                        -
+                          import: claim
+                    links:
+                      display: Links
+                      instructions: 'Links hinzufügen'
+                      icon: link
+                      fields:
+                        -
+                          import: links
+                    slideshow:
+                      display: Slideshow
+                      instructions: 'Bild-Slideshow hinzufügen'
+                      icon: media-image-picture-gallery
+                      fields:
+                        -
+                          import: slideshow
   teaser:
     display: Teaser
     sections:
