@@ -1,0 +1,25 @@
+title: Links
+fields:
+  -
+    handle: links
+    field:
+      type: replicator
+      display: Links
+      sets:
+        links:
+          display: Links
+          instructions: 'Links hinzufügen'
+          icon: link
+          sets:
+            link:
+              display: Link
+              instructions: 'Link hinzufügen'
+              icon: link
+              fields:
+                -
+                  handle: url
+                  field:
+                    collections:
+                      - pages
+                    type: link
+                    display: URL

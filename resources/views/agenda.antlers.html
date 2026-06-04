@@ -18,6 +18,12 @@
       class="w-full h-full object-contain"
       :alt="false" }}
   </div>
+  
+  {{ if teaser_image:caption }}
+    <figcaption class="absolute -bottom-70 left-1/2 -translate-x-1/2 w-full text-center text-xxs md:text-xs">
+      {{ teaser_image:caption | nl2br }}
+    </figcaption>
+  {{ /if }}
 </figure>
 
 {{ blocks }}

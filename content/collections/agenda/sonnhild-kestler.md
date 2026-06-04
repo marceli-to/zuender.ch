@@ -10,7 +10,9 @@ type: Showcase
 opening_hours: 'Mo–Fr 11–19 Uhr'
 teaser_image:
   image: dummy/dummy-agenda-1.jpg
-  caption: 'Sonnhild in ihrem Atelier in der Zürcher Altstadt, Foto: Simon Habegger'
+  caption: |-
+    Sonnhild in ihrem Atelier in der Zürcher Altstadt
+    Foto: Simon Habegger
 updated_by: 837ce95e-89bd-471c-af1b-fefad55d3952
-updated_at: 1777017941
+updated_at: 1780556762
 ---
