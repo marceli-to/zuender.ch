@@ -1,39 +1,6 @@
 <a href="{{ url }}" class="block md:mx-16 lg:mx-24">
 
-  {{ if date_start || date_end }}
-    {{ partial:components/agenda/pill class="mx-auto mb-8 lg:mb-12" }}
-      {{ if date_start && date_end }}
-        {{ date_start | format('d.m.') }} – {{ date_end | format('d.m.') }}
-      {{ elseif date_start && ! date_end }}
-        {{ date_start | format('d.m.') }}
-      {{ elseif ! date_start && date_end }}
-        {{ date_end | format('d.m.') }}
-      {{ /if }}
-    {{ /partial:components/agenda/pill }}
-  {{ /if }}
-  
-  {{ if title }}
-    <div class="border border-crimson dark:border-white rounded-full flex items-center justify-center py-4 px-16 lg:py-12 lg:px-24 relative">
-      <h2 class="font-trille-extra text-center text-5xl md:text-7xl lg:text-8xl xl:text-9xl leading-[.8] -mt-6 md:-mt-10 lg:-mt-16 !tracking-normal">
-        {{ title | nl2br }}
-      </h2>
-    </div>
-  {{ /if }}
-
-  {{ if type || opening_hours }}
-    <div class="mt-8 md:mt-12 mx-16 md:mx-32 lg:mx-48 flex flex-col gap-y-8 sm:gap-y-0 items-center sm:flex-row justify-between">
-      {{ if type }}
-        {{ partial:components/agenda/pill class="uppercase" }}
-          {{ type }}
-        {{ /partial:components/agenda/pill }}
-      {{ /if }}
-      {{ if opening_hours }}
-        {{ partial:components/agenda/pill }}
-          {{ opening_hours }}
-        {{ /partial:components/agenda/pill }}
-      {{ /if }}
-    </div>
-  {{ /if }}
+  {{ partial:components/agenda/header heading="h2" }}
 
   {{ if teaser_image }}
     <div class="mt-12 lg:mt-60 lg:mx-auto lg:max-w-[50rem]">

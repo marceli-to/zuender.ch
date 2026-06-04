@@ -1,57 +1,23 @@
 
-  {{ if date_start || date_end }}
-    {{ partial:components/agenda/pill class="mx-auto mb-8 lg:mb-12" }}
-      {{ if date_start && date_end }}
-        {{ date_start | format('d.m.') }} – {{ date_end | format('d.m.') }}
-      {{ elseif date_start && ! date_end }}
-        {{ date_start | format('d.m.') }}
-      {{ elseif ! date_start && date_end }}
-        {{ date_end | format('d.m.') }}
-      {{ /if }}
-    {{ /partial:components/agenda/pill }}
-  {{ /if }}
-
-  {{ if title }}
-    <div class="border border-crimson dark:border-white rounded-full flex items-center justify-center py-4 px-16 lg:py-12 lg:px-24 relative">
-      <h1 class="font-trille-extra text-center text-5xl md:text-7xl lg:text-8xl xl:text-9xl leading-[.8] -mt-6 md:-mt-10 lg:-mt-16 !tracking-normal">
-        {{ title | nl2br }}
-      </h1>
-    </div>
-  {{ /if }}
-
-  {{ if type || opening_hours }}
-    <div class="mt-8 md:mt-12 mx-16 md:mx-32 lg:mx-48 flex flex-col gap-y-8 sm:gap-y-0 items-center sm:flex-row justify-between">
-      {{ if type }}
-        {{ partial:components/agenda/pill class="uppercase" }}
-          {{ type }}
-        {{ /partial:components/agenda/pill }}
-      {{ /if }}
-      {{ if opening_hours }}
-        {{ partial:components/agenda/pill }}
-          {{ opening_hours }}
-        {{ /partial:components/agenda/pill }}
-      {{ /if }}
-    </div>
-  {{ /if }}
-
+{{ partial:components/agenda/header heading="h1" }}
 
 <figure class="relative mt-20 md:mt-40">
-    <div class="absolute inset-0 pointer-events-none hidden md:block">
-      <div class="absolute inset-0 rounded-full border border-crimson dark:border-white"></div>
-      <div class="absolute inset-y-0 left-80 right-80 rounded-full border border-crimson dark:border-white hidden lg:block"></div>
-      <div class="absolute inset-y-0 left-160 right-160 rounded-full border border-crimson dark:border-white hidden xl:block"></div>
-      <div class="absolute inset-y-0 left-240 right-240 rounded-full border border-crimson dark:border-white hidden xl:block"></div>
-    </div>
+  <div class="absolute inset-0 pointer-events-none hidden md:block">
+    <div class="absolute inset-0 rounded-full border border-crimson dark:border-white"></div>
+    <div class="absolute inset-y-0 left-80 right-80 rounded-full border border-crimson dark:border-white hidden lg:block"></div>
+    <div class="absolute inset-y-0 left-160 right-160 rounded-full border border-crimson dark:border-white hidden xl:block"></div>
+    <div class="absolute inset-y-0 left-240 right-240 rounded-full border border-crimson dark:border-white hidden xl:block"></div>
+  </div>
 
-    <div class="overflow-hidden rounded-full border border-crimson dark:border-white md:max-w-[calc(100%-160px)] lg:max-w-[calc(100%-320px)] xl:max-w-[calc(100%-640px)] mx-auto">
-      {{ partial:components/media/image 
-        :image="teaser_image:image" 
-        :alt="teaser_image:caption" 
-        preset="16x10"
-        sizes="(min-width: 1024px) 50rem, 100vw"
-        class="w-full h-full object-contain"
-        :alt="false" }}
-    </div>
+  <div class="overflow-hidden rounded-full border border-crimson dark:border-white md:max-w-[calc(100%-160px)] lg:max-w-[calc(100%-320px)] xl:max-w-[calc(100%-640px)] mx-auto">
+    {{ partial:components/media/image 
+      :image="teaser_image:image" 
+      :alt="teaser_image:caption" 
+      preset="16x10"
+      sizes="(min-width: 1024px) 50rem, 100vw"
+      class="w-full h-full object-contain"
+      :alt="false" }}
+  </div>
 </figure>
 
 {{ blocks }}
