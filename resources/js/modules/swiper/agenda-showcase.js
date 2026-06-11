@@ -3,12 +3,13 @@ import { Navigation, Keyboard, A11y } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-document.querySelectorAll('[data-agenda]').forEach((el) => {
+document.querySelectorAll('[data-agenda-showcase]').forEach((el) => {
   const swiper = new Swiper(el, {
     modules: [Navigation, Keyboard, A11y],
     slidesPerView: 1,
     spaceBetween: 24,
     grabCursor: true,
+    loop: true,
 
     observer: true,
     observeParents: true,

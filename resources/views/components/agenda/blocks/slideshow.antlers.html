@@ -1,14 +1,13 @@
 {{ if slides }}
-  {{ partial:components/swiper/container type="slideshow" navigation="true" }}
+  {{ partial:components/swiper/container type="agenda-showcase" navigation="true" }}
     {{ slides }}
       {{ if image }}
         {{ partial:components/swiper/slide }}
           {{ partial:components/media/image
             :image="image"
-            preset="16x10"
             sizes="(min-width: 1024px) 50rem, 100vw"
-            wrapperClass="md:max-w-[calc(100%-160px)] lg:max-w-[calc(100%-320px)] mx-auto md:shadow-[12px_12px_13.6px_0px_#ff0000]"
-            class="w-full h-auto"
+            wrapperClass="md:max-w-[calc(100%-160px)] lg:max-w-[calc(100%-320px)] mx-auto"
+            class="{{ image:height > image:width ? 'w-auto h-full max-w-[60%] mx-auto' : 'w-full h-auto' }} md:shadow-[12px_12px_13.6px_0px_#ff0000]"
             :alt="false" }}
 
           <p class="text-center text-xxs md:text-xs mt-12 md:mt-36">

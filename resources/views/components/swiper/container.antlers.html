@@ -1,11 +1,11 @@
-<div class="swiper w-full {{ type != 'slideshow' ? 'pb-48!' : 'max-w-7xl mx-auto' }} {{ class }}"{{ if type }} data-{{ type }}{{ /if }}>
+<div class="swiper w-full {{ type != 'agenda-showcase' ? 'pb-48!' : 'max-w-7xl mx-auto' }} {{ class }}"{{ if type }} data-{{ type }}{{ /if }}>
 
   <div class="swiper-wrapper">
     {{ slot }}
   </div>
 
   {{ if navigation }}
-    {{ if type == 'slideshow' }}
+    {{ if type == 'agenda-showcase' }}
       <button type="button" class="swiper-btn-prev hidden md:block cursor-pointer absolute z-10 left-20 top-1/2 -translate-y-1/2 w-12 h-21 md:w-18 md:h-31 lg:w-26 lg:h-45" aria-label="Vorheriger Slide">
         {{ partial:components/icons/chevron-left class="w-full h-auto" }}
       </button>
@@ -14,10 +14,10 @@
       </button>
 
     {{ else }}
-      <button type="button" class="swiper-btn-prev cursor-pointer absolute z-10 left-0 md:left-12 bottom-0 w-12 h-21 md:w-18 md:h-31 lg:w-26 lg:h-45" aria-label="Vorheriger Slide">
+      <button type="button" class="swiper-btn-prev cursor-pointer absolute z-10 left-0 md:left-12 top-0 w-12 h-21 md:w-18 md:h-31 lg:w-26 lg:h-45" aria-label="Vorheriger Slide">
         {{ partial:components/icons/chevron-left class="w-full h-auto" }}
       </button>
-      <button type="button" class="swiper-btn-next cursor-pointer absolute z-10 right-0 md:right-12 bottom-0 w-12 h-21 md:w-18 md:h-31 lg:w-26 lg:h-45" aria-label="Nächster Slide">
+      <button type="button" class="swiper-btn-next cursor-pointer absolute z-10 right-0 md:right-12 top-0 w-12 h-21 md:w-18 md:h-31 lg:w-26 lg:h-45" aria-label="Nächster Slide">
         {{ partial:components/icons/chevron-right class="w-full h-auto" }}
       </button>
     {{ /if }}
