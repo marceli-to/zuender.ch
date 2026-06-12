@@ -10,6 +10,16 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* --- 1.5px border utilities (remove this block to revert to default widths) --- */
+@utility border-1\.5 { border-width: 1.5px; }
+@utility border-x-1\.5 { border-inline-width: 1.5px; }
+@utility border-y-1\.5 { border-block-width: 1.5px; }
+@utility border-t-1\.5 { border-top-width: 1.5px; }
+@utility border-b-1\.5 { border-bottom-width: 1.5px; }
+@utility border-l-1\.5 { border-left-width: 1.5px; }
+@utility border-r-1\.5 { border-right-width: 1.5px; }
+/* --- end 1.5px border utilities --- */
+
 @theme {
   --font-chroma: 'Chroma ST', sans-serif;
   --font-trille: 'Trille filled Condensed', sans-serif;
