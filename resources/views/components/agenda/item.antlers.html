@@ -2,7 +2,7 @@
 
   {{ partial:components/agenda/header heading="h2" }}
 
-  {{ if teaser_image }}
+  {{ if teaser_image:image }}
     <div class="mt-12 lg:mt-60 lg:mx-auto lg:max-w-[50rem]">
       {{ partial:components/media/image 
         :image="teaser_image:image" 
